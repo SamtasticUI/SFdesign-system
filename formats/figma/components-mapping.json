@@ -1,0 +1,172 @@
+{
+  "version": "1.0.0",
+  "description": "Mapping of Figma components to SLDS CSS classes for seamless design-to-code handoff",
+  "components": {
+    "Button": {
+      "figma_name": "Button",
+      "variants": {
+        "Primary": {
+          "default": "slds-button slds-button_brand",
+          "disabled": "slds-button slds-button_brand slds-is-disabled",
+          "hover": "slds-button slds-button_brand",
+          "active": "slds-button slds-button_brand slds-is-active"
+        },
+        "Secondary": {
+          "default": "slds-button",
+          "disabled": "slds-button slds-is-disabled",
+          "hover": "slds-button",
+          "active": "slds-button slds-is-active"
+        },
+        "Neutral": {
+          "default": "slds-button slds-button_neutral",
+          "disabled": "slds-button slds-button_neutral slds-is-disabled",
+          "hover": "slds-button slds-button_neutral",
+          "active": "slds-button slds-button_neutral slds-is-active"
+        },
+        "Destructive": {
+          "default": "slds-button slds-button_destructive",
+          "disabled": "slds-button slds-button_destructive slds-is-disabled",
+          "hover": "slds-button slds-button_destructive",
+          "active": "slds-button slds-button_destructive slds-is-active"
+        }
+      }
+    },
+    "Input": {
+      "figma_name": "Input",
+      "variants": {
+        "Text": {
+          "default": "slds-input",
+          "disabled": "slds-input slds-is-disabled",
+          "focus": "slds-input slds-has-focus",
+          "error": "slds-input slds-has-error"
+        },
+        "Textarea": {
+          "default": "slds-textarea",
+          "disabled": "slds-textarea slds-is-disabled",
+          "focus": "slds-textarea slds-has-focus",
+          "error": "slds-textarea slds-has-error"
+        },
+        "Checkbox": {
+          "default": "slds-checkbox",
+          "disabled": "slds-checkbox slds-is-disabled",
+          "checked": "slds-checkbox slds-is-checked"
+        },
+        "Radio": {
+          "default": "slds-radio",
+          "disabled": "slds-radio slds-is-disabled",
+          "checked": "slds-radio slds-is-checked"
+        }
+      }
+    },
+    "Modal": {
+      "figma_name": "Modal",
+      "variants": {
+        "Standard": {
+          "default": "slds-modal slds-modal_large slds-fade-in-open",
+          "backdrop": "slds-backdrop slds-backdrop_open"
+        },
+        "Small": {
+          "default": "slds-modal slds-modal_small slds-fade-in-open",
+          "backdrop": "slds-backdrop slds-backdrop_open"
+        }
+      }
+    },
+    "Card": {
+      "figma_name": "Card",
+      "variants": {
+        "Base": {
+          "default": "slds-card",
+          "header": "slds-card__header",
+          "body": "slds-card__body",
+          "footer": "slds-card__footer"
+        }
+      }
+    },
+    "Badge": {
+      "figma_name": "Badge",
+      "variants": {
+        "Default": {
+          "default": "slds-badge"
+        },
+        "Inverse": {
+          "default": "slds-badge slds-theme_inverse"
+        }
+      }
+    },
+    "Alert": {
+      "figma_name": "Alert",
+      "variants": {
+        "Info": {
+          "default": "slds-notify slds-notify_alert slds-alert_info"
+        },
+        "Success": {
+          "default": "slds-notify slds-notify_alert slds-alert_success"
+        },
+        "Warning": {
+          "default": "slds-notify slds-notify_alert slds-alert_warning"
+        },
+        "Error": {
+          "default": "slds-notify slds-notify_alert slds-alert_error"
+        }
+      }
+    },
+    "Icon": {
+      "figma_name": "Icon",
+      "variants": {
+        "Standard": {
+          "default": "slds-icon",
+          "small": "slds-icon slds-icon_small",
+          "medium": "slds-icon slds-icon_medium",
+          "large": "slds-icon slds-icon_large"
+        }
+      }
+    },
+    "Spinner": {
+      "figma_name": "Spinner",
+      "variants": {
+        "Default": {
+          "default": "slds-spinner slds-spinner_medium"
+        }
+      }
+    },
+    "Dropdown": {
+      "figma_name": "Dropdown",
+      "variants": {
+        "Default": {
+          "default": "slds-dropdown-trigger",
+          "menu": "slds-dropdown slds-dropdown_left"
+        }
+      }
+    },
+    "Navigation": {
+      "figma_name": "Navigation",
+      "variants": {
+        "Horizontal": {
+          "default": "slds-navigation slds-theme_default"
+        },
+        "Vertical": {
+          "default": "slds-nav-vertical"
+        }
+      }
+    }
+  },
+  "instructions": {
+    "how_to_use": [
+      "1. Find the Figma component name in this mapping",
+      "2. Identify the variant and state",
+      "3. Use the corresponding SLDS CSS classes in your HTML",
+      "4. Combine classes as shown (e.g., 'slds-button slds-button_brand')",
+      "5. Refer to component documentation in Storybook for interactive examples"
+    ],
+    "class_naming_conventions": {
+      "block": "slds-[component-name]",
+      "modifier": "slds-[component-name]_[modifier-name]",
+      "state": "slds-is-[state-name] or slds-has-[property-name]"
+    }
+  },
+  "resources": {
+    "storybook_url": "http://localhost:9002",
+    "slds_documentation": "https://www.lightningdesignsystem.com",
+    "github_repository": "https://github.com/SamtasticUI/SFdesign-system"
+  }
+}
